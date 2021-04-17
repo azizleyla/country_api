@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country API</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b04fed802b.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ölkələr haqqında informasiya</h1>
+        <form id="form">
+            <div class="input-group">
+                <input type="text" class="form_control" placeholder="Ölkə adı daxil edin...">
+                <div class="input-append">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="cards">
+            <div class="card  hide">
+                <!-----<div class="card-single">
+                    <div class="card-img">
+                        <img src="${country.flag}" class="img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">${country.name}</h5>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Capital: ${country.capital}</li>
+                        <li class="list-group-item">Population: ${country.population}</li>
+                        <li class="list-group-item">Language: ${country.languages[0].nativeName}</li>
+                        <li class="list-group-item">Currencies: ${country.currencies[0].name} ${country.currencies[0].symbol}
+                        <li class="list-group-item">Time Zone: ${country.timezones[1]}</li>
+                    </ul>
+                    </div>
+                    <!------->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
